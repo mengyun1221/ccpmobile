@@ -1,0 +1,271 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #d8e9f2;
+  font-size: 18px;
+  line-height: 1.15;
+  margin: 0;
+  padding: 0;
+}
+
+
+h1{
+  font-size: 50px;
+  line-height: 1;
+  padding: 50px 0;
+  text-align: center;
+}
+
+h2{
+  font-size: 32px;
+  line-height: 1.5;
+  text-decoration: underline;
+}
+
+h3{
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+nav li{
+  display: inline-block;
+  padding-right:25px;
+}
+
+nav a{
+  color: black;
+  font-weight: bold;
+  text-decoration: none; 
+}
+
+nav li.active a {
+  color: white;
+  font-size: 20px;
+  background-color:#0a83c4; 
+  font-weight: bold;
+  border: 5px solid #0cf5ed;
+  text-decoration: underline;
+  padding: 5px;
+}
+
+nav{
+  background-color: #ddd;
+  padding: 25px 0; 
+  text-align: center;
+}
+
+.skip a {
+  position: absolute;
+  top: -40px;
+}
+
+.skip a:focus {
+  top: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  img[src$=".gif"] {
+      display: none;
+  }
+}
+
+/*pet page */
+.pet_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  margin-left: auto; 
+  margin-right: auto;
+  gap: 20px;
+  overflow: hidden;
+  justify-items: center;
+}
+
+.pet_overview{
+  grid-column: 1 / -1; 
+  text-align: center;
+}
+
+.miumiu-header,.sprout-header,.cody-header,.peddie-header,.sage-header,.chako-header,.juno-header{
+  grid-column: 1/-1; 
+  text-align: center;
+}
+
+.miumiu-description-text,.sprout-description-text,.cody-description-text,.peddie-description-text,
+.sage-description-text,.chako-description-text,.juno-description-text{
+grid-column: 1/-1;
+background-color: rgba(255, 255, 255, .8);
+border: 5px dotted #69d1ca;
+padding: 20px;
+text-align: left;
+word-wrap: break-word; 
+overflow-wrap: break-word; 
+max-width: 100%;
+box-sizing: border-box;
+}
+
+.miumiu-gallery,.sprout-gallery,.cody-gallery,.peddie-gallery,.sage-gallery,.chako-gallery,.juno-gallery{
+  grid-column: 1 / -1; 
+  text-align: center;
+}
+
+.miumiu-image,.sprout-image,.cody-image,.peddie-image,.sage-image,.chako-image,.juno-image{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  grid-column: 1 / -1;
+  padding: 20px; 
+  border: 3px solid #11c0db;
+}
+
+.miumiu-like,.sprout-like,.cody-like,.peddie-like,.sage-like,.chako-like,.juno-like{
+  grid-column: 1/-1; 
+  text-align: center;
+}
+
+/*recipes page */
+.recipes_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  margin-left: auto; 
+  margin-right: auto;
+  gap: 20px;
+  overflow: hidden;
+  justify-items: center;
+}
+
+.recipes_overview{
+  grid-column: 1 / -1; 
+  text-align: center;
+}
+.first-header,.second-header,.third-header{
+  grid-column: 1/-1; 
+  text-align: center;
+}
+.recipe-meta{
+  grid-column: 1/-1; 
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.first-description-image,.second-description-image,.third-description-image{
+  grid-column: 1/-1; 
+}
+
+.first-description,.second-description,.third-description{
+  grid-column: 1/-1;
+  background-color: rgba(255, 255, 255, .8);
+  border: 5px dotted #69d1ca;
+  padding: 20px;
+  text-align: left;
+  word-wrap: break-word; 
+  overflow-wrap: break-word; 
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.first-ingredients-section, .first-steps-section,
+.second-ingredients-section, .second-steps-section,
+.third-ingredients-section, .third-steps-section{
+  margin-top: 20px;
+  grid-column: 1/-1;
+  text-align: center;
+}
+
+.first-ingredients-list,.second-ingredients-list,.third-ingredients-list{
+  grid-column: 1/-1; 
+  text-align: center;
+  list-style-type: circle;
+}
+
+.first-recipe-steps,.second-recipe-steps,.third-recipe-steps{
+  grid-column: 1/-1; 
+  text-align: left;
+  list-style-type: decimal;
+  background-color:#d5e7e8;
+  border: 5px double #1e588f;
+  padding: 20px;
+  word-wrap: break-word; 
+  overflow-wrap: break-word; 
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.first-gallery,.second-gallery,.third-gallery{
+  grid-column: 1 / -1; 
+  text-align: center;
+}
+
+.first-image,.second-image,.third-image{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 20px;
+grid-column: 1 / -1;
+padding: 20px; 
+border: 3px solid #11c0db;
+}
+
+/*travel page */
+.travel_overview{
+  grid-column: 1 / -1; 
+  text-align: center;
+}
+
+.vermont-header,.bangkok-header,.monteverde-header,.shanghai-header{
+  text-align: center;
+}
+
+.vermont-header-image,.bangkok-header-image,.monteverde-header-image,.shanghai-header-image{
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 20px;
+padding: 5px; 
+border: 3px solid #11c0db;
+justify-items: center;
+}
+
+.vermont-description-title,.vermont-gallery,
+.bangkok-description-title,.bangkok-gallery,
+.monteverde-description-title,.monteverde-gallery,
+.shanghai-description-title,.shanghai-gallery{
+  text-align: center;
+}
+
+.vermont-description-text,.bangkok-description-text,.monteverde-description-text,.shanghai-description-text{
+  background-color: rgba(255, 255, 255, .8);
+  border: 5px dotted #69d1ca;
+  padding: 20px;
+  text-align: left;
+  word-wrap: break-word; 
+  overflow-wrap: break-word; 
+  max-width: 100%;
+  box-sizing: border-box;  
+}
+
+figure {
+  border: 5px double #1e588f;
+  word-wrap: break-word; 
+  overflow-wrap: break-word; 
+  display: flex;           
+  flex-direction: column;  
+  align-items: center;     
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+figcaption {
+  margin-top: 10px;
+}
